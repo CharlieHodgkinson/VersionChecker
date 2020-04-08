@@ -14,7 +14,7 @@ outputs:
     description: 'version number of package on npm'
   updated:
     description: 'wether the local version num has been updated compared to public version num'
-    default: false
+    default: 'false'
 runs:
   using: 'node12'
   main: 'index.js'
