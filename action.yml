@@ -1,4 +1,4 @@
-name: 'Version Check'
+name: 'Version Checker'
 description: 'Check if package version in package.json is higher than the current package version on npm'
 inputs:
   localFilePath:
