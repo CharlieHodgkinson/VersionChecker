@@ -11,8 +11,10 @@ try {
     const localVersion = semver.valid(localPackage.version)
 
     console.log("public version: ", publicVersion, "local version: ", localVersion)
+    core.setOutput("localVersion", localVersion)
+    core.setOutput("publicVersion", publicVersion)
 
-    semver.gt(localVersion, publicVersion) ? 0 : core.setFailed("version number has not been increased")
+    semver.gt(localVersion, publicVersion) ? core.setOutput("updated", true) : core.setFailed("version number has not been increased")
   
 } catch (error) {
   core.setFailed(error.message);

@@ -7,6 +7,14 @@ inputs:
   publicPackageName:
     description: 'name of your package as listed on npm'
     required: true
+outputs:
+  localVersion:
+    description: 'version number of local package'
+  publicVersion:
+    description: 'version number of package on npm'
+  updated:
+    description: 'wether the local version num has been updated compared to public version num'
+    default: false
 runs:
   using: 'node12'
   main: 'index.js'
