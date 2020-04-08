@@ -14,3 +14,8 @@ jobs:
         with:
           localFilePath: '/home/runner/work/VersionChecker/VersionChecker/package.json'
           publicPackageName: 'charlie-citest'
+      - continue-on-error: true
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "success"
