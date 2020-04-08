@@ -7,6 +7,7 @@ jobs:
   check-version:
     runs-on: ubuntu-latest
     steps:
+      - continue-on-error: true
       - uses: actions/setup-node@v1
       - uses: actions/checkout@v2
       - run: npm install
@@ -14,7 +15,6 @@ jobs:
         with:
           localFilePath: '/home/runner/work/VersionChecker/VersionChecker/package.json'
           publicPackageName: 'charlie-citest'
-      - continue-on-error: true
   test:
     runs-on: ubuntu-latest
     steps:
