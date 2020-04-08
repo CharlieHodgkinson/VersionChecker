@@ -14,7 +14,7 @@ try {
     core.setOutput("localVersion", localVersion)
     core.setOutput("publicVersion", publicVersion)
 
-    semver.gt(localVersion, publicVersion) ? core.setOutput("updated", true) : core.setFailed("version number has not been increased")
+    semver.gt(localVersion, publicVersion) ? core.setOutput("updated", "true") : core.setFailed("version number has not been increased")
   
 } catch (error) {
   core.setFailed(error.message);
