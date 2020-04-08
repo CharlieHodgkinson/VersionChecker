@@ -7,14 +7,21 @@ jobs:
   check-version:
     runs-on: ubuntu-latest
     steps:
-      - continue-on-error: true
-      - uses: actions/setup-node@v1
-      - uses: actions/checkout@v2
-      - run: npm install
-      - uses: CharlieHodgkinson/VersionChecker@master
+      - name: building
+        id: build
+        uses: actions/setup-node@v1
+        uses: actions/checkout@v2
+        run: npm install
+      - name: run-action
+        id: run
+        uses: CharlieHodgkinson/VersionChecker@master
         with:
           localFilePath: '/home/runner/work/VersionChecker/VersionChecker/package.json'
           publicPackageName: 'charlie-citest'
+        continue-on-error: true
+      - name: display-outputs
+        id: display
+        run: echo "example"
   test:
     runs-on: ubuntu-latest
     steps:
