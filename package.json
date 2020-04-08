@@ -1,0 +1,22 @@
+{
+  "name": "versionchecker",
+  "version": "0.1.0",
+  "description": "Github action that compares your local version number with a public npm package version number",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlieHodgkinson/VersionChecker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlieHodgkinson/VersionChecker/issues"
+  },
+  "homepage": "https://github.com/CharlieHodgkinson/VersionChecker#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "execSync": "^1.0.2",
+    "semver": "^7.2.1"
+  }
+}

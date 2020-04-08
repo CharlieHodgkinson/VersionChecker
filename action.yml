@@ -1,0 +1,12 @@
+name: 'Version Check'
+description: 'Check if package version in package.json is higher than the current package version on npm'
+inputs:
+  localFilePath:
+    description: 'file path to your package.json'
+    required: true
+  publicPackageName:
+    description: 'name of your package as listed on npm'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
