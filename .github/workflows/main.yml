@@ -10,6 +10,8 @@ jobs:
       - name: building
         id: build
         uses: actions/setup-node@v1
+      - name: moreBuilding
+        id: morebuild
         uses: actions/checkout@v2
       - name: run-action
         id: run
