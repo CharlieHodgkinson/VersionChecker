@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-node@v1
       - uses: actions/checkout@v2
       - run: npm install
-      - uses: CharlieHodgkinson/VersionChecker
+      - uses: CharlieHodgkinson/VersionChecker@master
         with:
           localFilePath: '/home/runner/work/VersionChecker/VersionChecker/package.json'
           publicPackageName: 'charlie-citest'
