@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/CharlieHodgkinson/VersionChecker#readme",
   "dependencies": {
-    "@actions/core": "^1.2.3",
+    "@actions/core": "^1.2.6",
     "execSync": "^1.0.2",
     "semver": "^7.2.1"
   }
