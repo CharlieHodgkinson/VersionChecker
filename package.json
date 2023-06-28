@@ -17,6 +17,6 @@
   "dependencies": {
     "@actions/core": "^1.2.6",
     "execSync": "^1.0.2",
-    "semver": "^7.2.1"
+    "semver": "^7.5.2"
   }
 }
